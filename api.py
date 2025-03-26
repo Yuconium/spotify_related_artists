@@ -1,9 +1,6 @@
 
 from selenium import webdriver
 
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import getpass
 from bs4 import BeautifulSoup
 
@@ -70,6 +67,6 @@ class Driver:
 
 	
 if __name__ == "__main__":
-	name = input()
-	id = input()
+	name = input("Name of the artist:")
+	id = input("ID of the artist:")
 	driver = Driver (name, id)
