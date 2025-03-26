@@ -22,7 +22,7 @@ class Driver:
 
 		self.get_info(self.start_artist)
 		print(self.dicts)
-		print()
+		
 		for i in self.dicts[0][self.start_artist]:
 
 			self.get_site("https://open.spotify.com/artist/" + i["ID"] + "/related")
